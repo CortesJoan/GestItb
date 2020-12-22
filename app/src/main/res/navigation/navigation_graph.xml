@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navigation_graph"
+    app:startDestination="@id/missedAttendanceListFragment">
+
+    <fragment
+        android:id="@+id/missedAttendanceListFragment"
+        android:name="com.example.e15gestitb.MissedAttendanceListFragment"
+        android:label="MissedAttendanceListFragment" >
+        <action
+            android:id="@+id/action_list_to_fragment"
+            app:destination="@id/missedAttendanceFragment"
+            app:enterAnim="@anim/fragment_fade_enter" />
+    </fragment>
+    <fragment
+        android:id="@+id/missedAttendanceFragment"
+        android:name="com.example.e15gestitb.MissedAttendanceFragment"
+        android:label="MissedAttendanceFragment" >
+        <argument
+            android:name="missedAttendanceModel"
+            app:argType="com.example.e15gestitb.MissedAttendanceModel"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_missedAttendanceFragment_to_missedAttendanceListFragment3"
+            app:destination="@id/missedAttendanceListFragment" />
+    </fragment>
+</navigation>

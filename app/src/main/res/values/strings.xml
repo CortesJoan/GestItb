@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">E1.5GestITB</string>
+    <string-array name="modules">
+        <item>M6 - Data access</item>
+        <item>M7 - Interface development</item>
+        <item>M8 - Multimedia programming and mobile devices</item>
+        <item>M9 - Programming of services and processes</item>
+    </string-array>
+</resources>
